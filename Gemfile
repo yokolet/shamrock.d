@@ -7,9 +7,14 @@ gem 'rails', '3.2.13'
 
 gem 'diametric', :path => '/Users/yoko/Projects/diametric'
 gem 'lock_jar', "~> 0.7.3"
-gem 'pry'
+
+group :development, :test do
+  gem 'pry'
+end
 
 gem 'jruby-openssl'
+
+gem "haml-rails", "~> 0.4"
 
 # Gems used only for assets and not required
 # in production environments by default.

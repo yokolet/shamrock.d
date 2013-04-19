@@ -13,4 +13,6 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /vendor/log/*.log
-/tmp
+/vendor/log/*.pid
+/vendor/db/db/datomic.lock.db
+tmp
