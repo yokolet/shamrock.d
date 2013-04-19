@@ -1,0 +1,11 @@
+<% @pages.each_with_index do |page, index| %>
+  <% if @no.to_i == page.no %>
+    <div id="orange" class="item" style="z-index: <%= -(index - @pages.length) %>; display: block;">
+      <div class="title"><%= page.title %></div>
+      <%= raw(page.content) %>
+<script type="text/javascript">
+     SyntaxHighlighter.all();
+  </script>
+    </div>
+  <% end %>
+<% end %>

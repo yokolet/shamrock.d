@@ -1,0 +1,23 @@
+<div id="content">
+                
+  <div class="slider">
+    <div class="sliderContent" id="pink">
+      <% page = @pages.at(0) %>
+      <div class="item" style="z-index: <%= -(0 - @pages.length) %>;">
+        <div class="title"><%= page.title %></div>
+        <%= raw(page.content) %>
+      </div>
+    </div>
+    <div class="sliderBullets">
+      <a class="active" href="#" rel="0">0</a>
+      <% (1...@pages.length).each do |index| %>
+        <a href="#" rel="<%= index %>"><%= index %></a>
+      <% end %>
+    </div>
+    <div class="sliderArrows" style="display: block;">
+      <a class="prev" href="#">Previous</a>
+      <a class="next" href="#">Next</a>
+    </div>
+  </div> <!-- slider -->
+                
+</div> <!-- content -->
