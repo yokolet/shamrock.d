@@ -7,7 +7,7 @@ $(function(){
 		animationSpeed: 500,
 		bullets: true,
 		arrows: true,
-		arrowsHide: true,
+		arrowsHide: false,
 		prev: 'prev',
 		next: 'next',
 		animationStart: function(){},
