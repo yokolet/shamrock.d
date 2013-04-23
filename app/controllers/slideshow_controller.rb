@@ -1,7 +1,6 @@
 class SlideshowController < ApplicationController
   def index
-    #@pages = Page.order('no')
-    @pages = Page.all
+    @pages = Page.all.sort {|x, y| x.no <=> y.no}
     respond_to do |format|
       format.html
       format.js
