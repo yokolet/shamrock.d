@@ -150,7 +150,12 @@ letter-spacing: -2px;
     font-size: 400%;
     line-height: 60px;
     color: #222d06;
-    letter-spacing: -2px
+    letter-spacing: -2px;
+}
+
+.partial {
+    padding-left: 30px;
+    padding-right; 30px;
 }
 
 h1, h2, h3, h4, h5
