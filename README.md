@@ -1,4 +1,10 @@
-- "Datomic, from Ruby, from Rails," RailsConf 2013 Slide
+## "Datomic, from Ruby, from Rails," RailsConf 2013 Slide
+
+This repository has the slide code I used at RailsConf 2013 presentation.
+My slide was a working example of JRuby on Rails, Datomic backend.
+I used diametric gem for my slide app.
+
+To run this app, follow the instruction below:
 
 1. Get ready to use JRuby.
 
@@ -7,18 +13,17 @@
    $ git clone git@github.com:yokolet/shamrock.d.git
    ```
 
-3. Bundle install
+3. Bundle install (use JRuby!)
 
-   * use JRuby!
    ```bash
    $ bundle install
    ```
 
 4. Edit Datomic free transactor's configuration
 
-   shamrock.d/vendor/config/free-transactor-template.properties
+   file: `shamrock.d/vendor/config/free-transactor-template.properties`
    ```java
-   data-dir=<rails root>/vendor/ db
+   data-dir=<rails root>/vendor/db
    log-dir=<rails root>/vendor/log
    pid-dir=<rails root>/vendor/log/free-transactor.pid
    ```
@@ -34,8 +39,9 @@
 
 6. Start Rails
 
-   cd shamrock.d
-   bundle exec rails s
+   ```bash
+   $ bundle exec rails s
+   ```
 
    At the very first time, it takes very long time. Datomic will be downloaded under the gem directory.
 
