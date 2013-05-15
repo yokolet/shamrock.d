@@ -27,7 +27,7 @@ To run this app, follow the instruction below:
    log-dir=<rails root>/vendor/log
    pid-dir=<rails root>/vendor/log/free-transactor.pid
    ```
-   *<rails root> is a full path to shamrock.d including "shamrock.d"
+   *`<rails root>` is a full path to shamrock.d including "shamrock.d"
 
 5. Start Datomic free transactor
 
