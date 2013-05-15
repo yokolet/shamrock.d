@@ -34,7 +34,7 @@ To run this app, follow the instruction below:
    Assuming you have Datomic free version downloaded and unzipped,
    `cd` to unzipped directory.
    ```bash
-   $ bin/transactor <rails root>/vendor/config//free-transactor-template.properties
+   $ bin/transactor <rails root>/vendor/config/free-transactor-template.properties
    ```
 
 6. Start Rails
