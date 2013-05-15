@@ -1,3 +1,5 @@
 ---
 development:
   uri: datomic:free://localhost:4334/shamrock
+production:
+  uri: datomic:free://localhost:4334/shamrock
